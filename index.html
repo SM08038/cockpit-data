@@ -3,7 +3,7 @@
 <title>Players & Stats Hub · CultureLink Sports</title>
 <meta name="description" content="Follow every game of the players supported by CultureLink Sports — results, stats and schedules, season 2026-27.">
 <meta property="og:title" content="Players & Stats Hub · CultureLink Sports"><meta property="og:description" content="Game-by-game stats, season 2026-27.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head><body style="margin:0;padding:clamp(8px,2vw,24px);background:#020409;min-height:100vh">
 <!-- CultureLink Sports · Players & Stats Hub · self-contained block -->
 <div id="clh">
@@ -135,6 +135,57 @@
 #clh .grph{grid-column:1/-1;display:flex;align-items:baseline;gap:12px;margin:14px 0 -2px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.1)}#clh .grph:first-child{margin-top:0}#clh .grph b{font:800 1.05rem ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:#fff}#clh .grph span{font-size:.8rem;color:#9AA4B8}#clh .grph i{margin-left:auto;font-style:normal;font:700 .75rem ui-monospace,monospace;color:#0A0D14;background:#FFB020;border-radius:999px;padding:2px 9px}
 #clh .fbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:4px 0 16px;position:sticky;top:0;z-index:20;padding:10px 0;background:linear-gradient(#0A0D14 75%,rgba(10,13,20,0))}#clh .fbar input{flex:1 1 220px;min-width:0;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;color:#fff;padding:9px 16px;font:inherit;font-size:.9rem;outline:none}#clh .fbar input:focus{border-color:#FFB020}#clh .chips{display:flex;flex-wrap:wrap;gap:6px}#clh .chips button{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);color:#C9D1E0;border-radius:999px;padding:7px 13px;font:600 .78rem system-ui,sans-serif;cursor:pointer}#clh .chips button.on{background:#FFB020;border-color:#FFB020;color:#0A0D14}
 #clh .watchbtn{display:inline-flex;align-items:center;gap:4px;margin-top:8px;padding:5px 12px;border-radius:999px;background:#FF3B5C;color:#fff!important;font:800 .7rem ui-monospace,monospace;letter-spacing:.14em;text-decoration:none;box-shadow:0 4px 14px rgba(255,59,92,.45)}#clh .watchbtn:hover{filter:brightness(1.15)}
+/* ===== LIGHT MODE ===== */
+#clh{--bg:#F5F6F8;--panel:#FFFFFF;--line:#E6E8EE;--fg:#0F172A;--mut:#64748B;--cy:#0B2236;--am:#B08D4A;--red:#C8102E;--disp:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+ background:#F5F6F8;color:#0F172A;border:0;box-shadow:none;border-radius:28px;padding:clamp(16px,3.5vw,40px)}
+#clh:after{display:none}
+#clh .disp{font-weight:800;letter-spacing:-.01em}
+#clh .hud{background:#fff;border:1px solid #E6E8EE;color:#64748B;letter-spacing:.12em;border-radius:14px}
+#clh .tick{background:#fff;border:1px solid #E6E8EE;color:#64748B;border-radius:14px}#clh .tick b{color:#0F172A}
+#clh .hero{background:linear-gradient(135deg,#0B2236,#13385A);border:0;border-radius:24px;box-shadow:0 20px 50px rgba(11,34,54,.18);color:#fff}
+#clh .hero:before{display:none}#clh .hero:after{background:linear-gradient(90deg,#B08D4A,#E3C27A);height:4px}
+#clh .eyebrow{color:#E3C27A}#clh h1{text-shadow:none;font-weight:800;letter-spacing:-.02em}#clh .lede{color:#B9C6D6}
+#clh .kpi{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:16px}#clh .kpi:before{display:none}
+#clh .kpi .v{color:#fff;text-shadow:none;font-weight:800}#clh .kpi .l{color:#B9C6D6}
+#clh h2{font-weight:800;letter-spacing:-.02em;margin-top:44px}#clh h2:after{background:#B08D4A;box-shadow:none}
+#clh .sub{color:#94A3B8}
+#clh .fbar{background:linear-gradient(#F5F6F8 75%,rgba(245,246,248,0))}
+#clh .fbar input{background:#fff;border:1px solid #E2E8F0;color:#0F172A;box-shadow:0 1px 2px rgba(15,23,42,.04)}#clh .fbar input:focus{border-color:#B08D4A}
+#clh .chips button{background:#fff!important;border:1px solid #E2E8F0!important;color:#334155!important}
+#clh .chips button.on{background:#0B2236!important;border-color:#0B2236!important;color:#fff!important}
+#clh .grph{border-bottom:1px solid #E6E8EE;margin-top:26px}#clh .grph b{color:#0F172A;font-family:system-ui,sans-serif;letter-spacing:.12em}#clh .grph span{color:#94A3B8}#clh .grph i{background:#0B2236;color:#fff}
+#clh .cards{gap:20px}
+#clh .pc{background:#fff;color:#0F172A;border:1px solid #EDF0F4;border-radius:22px;padding:22px;box-shadow:0 1px 2px rgba(15,23,42,.04),0 10px 30px rgba(15,23,42,.06)}
+#clh .pc:before{height:5px;background:linear-gradient(90deg,var(--a1),var(--a1) 70%,var(--a2))}
+#clh .pc:hover{box-shadow:0 18px 44px rgba(15,23,42,.12);transform:translateY(-3px)}
+#clh .pc.isnew{box-shadow:0 0 0 2px #FF3B5C,0 14px 34px rgba(255,59,92,.15)}
+#clh .pc:after{opacity:.045;color:var(--a1)}
+#clh .av{box-shadow:0 0 0 3px #fff,0 0 0 5px var(--a1),0 6px 16px rgba(15,23,42,.15);background-color:#E2E8F0}
+#clh .nm{font-weight:800;letter-spacing:-.01em}#clh .tm{opacity:.6}
+#clh .bio{opacity:1;color:#475569}#clh .bio b{color:var(--a1)}
+#clh .gauge .tr{stroke:#EEF1F5}#clh .gauge .vl{stroke:var(--a1);filter:none}
+#clh .gauge .c b{font-weight:800}
+#clh .mb{opacity:1;color:#475569}#clh .mb .t{background:#EEF1F5}#clh .mb .t i{background:var(--a1)}
+#clh .st{background:#F8FAFC;border:1px solid #EEF1F5}#clh .st .v{font-weight:800}
+#clh .row{border-top:1px solid #EEF1F5}
+#clh .more{color:var(--a1)}
+#clh .W{background:#DCFCE7;color:#166534}#clh .L{background:#FEE2E2;color:#B91C1C}
+#clh .panel{background:#fff;border:1px solid #EDF0F4;box-shadow:0 10px 30px rgba(15,23,42,.05)}#clh .panel:before{display:none}
+#clh li{border-bottom:1px solid #EEF1F5}#clh li.cl:hover{background:#F8FAFC}
+#clh th{color:#94A3B8}#clh th,#clh td{border-bottom:1px solid #EEF1F5}#clh td.hot{color:#B45309}
+#clh .pd{border-top:4px solid #B08D4A;box-shadow:0 20px 60px rgba(15,23,42,.12)}
+#clh .pdtop .av{box-shadow:0 0 0 3px #fff,0 0 0 5px #B08D4A}
+#clh .x{background:#F1F5F9;border:1px solid #E2E8F0;color:#0F172A}
+#clh .ps{background:#F8FAFC;border-color:#EEF1F5}#clh .ps .v{color:#0B2236;text-shadow:none;font-weight:800}
+#clh .bar{background:linear-gradient(180deg,#0B2236,#3A6EA5);box-shadow:none}
+#clh .biogrid div{background:#F8FAFC;border:1px solid #EEF1F5}#clh .biogrid small{color:#94A3B8}#clh .biogrid span{font-weight:700}
+#clh .mapwrap{background:#EEF3F8;border:1px solid #E2E8F0}#clh .mapwrap .land{fill:#D5DEE8}
+#clh .maplbl{fill:#0F172A;stroke:#EEF3F8}
+#clh .nextmini{background:#fff;border:1px solid #EDF0F4;opacity:1}#clh .nextmini .nmh{color:#64748B}
+#clh .foot{color:#94A3B8}
+body{background:#ECEEF2!important}#clh .pc.isnew{box-shadow:0 0 0 1.5px #FF3B5C,0 14px 34px rgba(255,59,92,.12)}
+#clh .grph{margin-top:34px;padding-bottom:10px}#clh .grph b{font:800 1.5rem/1.1 "Inter",system-ui,sans-serif;letter-spacing:.04em}#clh .grph span{font-size:.9rem}#clh .grph i{font-size:.85rem}
+#clh h3{font-weight:800;letter-spacing:-.01em}#clh .ps .v{font-size:1.6rem}#clh .arc{filter:none;stroke-width:.4}#clh .mapwrap{background:#F1F5F9}#clh .maplegend{color:#334155}
 </style>
 <div class="hud"><span><span class="dot"></span><span class="on">LIVE</span> · CULTURELINK SPORTS · MISSION CONTROL</span><span id="clk">--:--:--</span><span>SEASON 2026-27 · <span id="hn">0</span> PLAYERS TRACKED</span></div>
 <div class="tick"><div id="tk"></div></div>
@@ -209,10 +260,10 @@ const mk=(t,a)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAt
 const g=mk('g',{class:'land'});for(let j=0;j<64;j++)for(let i=0;i<144;i++)if(bits[j*144+i]==='1')g.append(mk('circle',{cx:i+.5,cy:j+.5,r:.36}));svg.append(g);
 const xy=(lat,lon)=>[(lon+180)/360*144,(84-lat)/142*64];
 const seen={};const legend=$('#mleg');
-order.forEach((p,idx)=>{const b=p.bio;if(!b||!b.o||!b.d)return;const NEON=['#FF3B5C','#00E5FF','#FFB020','#7CFF6B','#B388FF','#FF7A1A','#F3F5FA','#2FD27A','#FF5FD2','#4DA3FF'];const col=NEON[idx%NEON.length];const [x1,y1]=xy(b.o[0],b.o[1]),[x2,y2]=xy(b.d[0],b.d[1]);const dx=x2-x1,dy=y2-y1,dist=Math.hypot(dx,dy);const lift=Math.max(1.2,dist*.32);const mx=(x1+x2)/2,my=(y1+y2)/2-lift;
+order.forEach((p,idx)=>{const b=p.bio;if(!b||!b.o||!b.d)return;const NEON=['#E11D48','#0284C7','#D97706','#16A34A','#7C3AED','#EA580C','#0B2236','#059669','#DB2777','#2563EB'];const col=NEON[idx%NEON.length];const [x1,y1]=xy(b.o[0],b.o[1]),[x2,y2]=xy(b.d[0],b.d[1]);const dx=x2-x1,dy=y2-y1,dist=Math.hypot(dx,dy);const lift=Math.max(1.2,dist*.32);const mx=(x1+x2)/2,my=(y1+y2)/2-lift;
 const grp=mk('g',{'data-p':p.player,style:'cursor:pointer'});
 const path=mk('path',{d:`M${x1},${y1} Q${mx},${my} ${x2},${y2}`,class:'arc',stroke:col,style:'color:'+col+';animation-delay:'+(idx*.2)+'s'});grp.append(path);
-grp.append(mk('circle',{cx:x1,cy:y1,r:.45,fill:'#F3F5FA'}));
+grp.append(mk('circle',{cx:x1,cy:y1,r:.45,fill:'#0B2236'}));
 const pin=mk('circle',{cx:x2,cy:y2,r:.55,fill:col,class:'pin',style:'animation-delay:'+(idx*.25)+'s'});grp.append(pin);grp.append(mk('circle',{cx:x2,cy:y2,r:.55,fill:col}));
 const tt=mk('title',{});tt.textContent=p.player+' → '+b.dn;grp.append(tt);grp.addEventListener('click',()=>open(p.player));svg.append(grp);
 const s=el('span');const i=el('i');i.style.background=col;s.append(i,document.createTextNode((b.flags||'').slice(0,4)+' '+p.player.split(' ')[0]+' → '+b.dn));s.onclick=()=>open(p.player);legend.append(s)});
